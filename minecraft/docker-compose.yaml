@@ -1,0 +1,26 @@
+version: "3"
+# Other docker-compose examples in /examples
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    ports:
+      - "25565:25565"
+      - "25565:25565/udp"
+    volumes:
+      - "mc:/data"
+    environment:
+      EULA: "TRUE"
+      TYPE: "SPIGOT"
+      DIFFICULTY: "normal"
+      WHITELIST: "invis5,Psherm42,wallab_42"
+      ENABLE_QUERY: "true"
+      PVP: "false"
+      # enable env variable replacement
+      REPLACE_ENV_VARIABLES: "TRUE"
+      MEMORY: "4G"
+      # define an optional prefix for your env variables you want to replace
+    restart: always
+
+volumes:
+  mc:
