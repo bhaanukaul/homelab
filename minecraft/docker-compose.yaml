@@ -13,7 +13,8 @@ services:
       EULA: "TRUE"
       TYPE: "SPIGOT"
       DIFFICULTY: "normal"
-      WHITELIST: "invis5,Psherm42,wallab_42"
+      WHITELIST: invis5,p_sherm42,wallab_42,wallab42,p_sherm42
+      OPS: invis5,wallab42,p_sherm42,M1k3l9
       ENABLE_QUERY: "true"
       PVP: "false"
       # enable env variable replacement
